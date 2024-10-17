@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de Modelo 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    model-viewer {
+      width: 100%;
+      height: 80vh;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="heladera.glb" 
+    ar 
+    camera-controls 
+    shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
